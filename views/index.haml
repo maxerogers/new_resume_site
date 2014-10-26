@@ -1,0 +1,184 @@
+!!! XML
+%html{:lang => "en", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %title 3ColorResume
+    %link{:href => "css/bootstrap.min.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "css/font-awesome.min.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "css/main.scss", :rel => "stylesheet", :type => "text/css"}/
+    /[if lt IE 9]
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    %script{:async => "", :src => "//www.google-analytics.com/analytics.js", :type => "text/javascript"}
+    :javascript
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-51302339-1', 'kamsolutions.pl');
+  ga('send', 'pageview');
+    %body
+    .container
+      .row
+        .col-xs-12
+          #photo-header.text-center
+            / PHOTO (AVATAR)
+            #photo
+              %img{:alt => "avatar", :src => "img/avatar.jpg"}/
+            #text-header
+              %h1
+                Hello,
+                %br>/
+                my name is
+                %span Max
+                %sup 24yo
+                and this is my resume/cv
+      .row
+        .col-xs-12.col-sm-7
+          / ABOUT ME
+          .box
+            %h2
+              About Me
+            %p
+              My name is Max Rogers, and I’m a passionate Ruby developer, founder of Mobile App Developers, and a coach at Major League Hacking. A student at Stony Brook University and graduating this December. Looking for fullstack(web) or mobile developer employment positions in New York,NY.
+          / EXPERIENCES
+          .box
+            %h2
+              Experiences
+            .job.clearfix
+              .col-xs-3
+                .where
+                  Google
+                .year
+                  2013 - 2014
+              .col-xs-9
+                .profession
+                  Front-end developer / php programmer
+                .description
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, et, illum perferendis veritatis velit sunt similique qui magni totam harum tempore eius laboriosam accusantium necessitatibus voluptatum? Enim, itaque dignissimos quia.
+            .job.clearfix
+              .col-xs-3
+                .where
+                  Twitter
+                .year
+                  2012
+              .col-xs-9
+                .profession
+                  Web Developer
+                .description
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, nihil sit nemo voluptatem praesentium. Quia, qui facere consectetur libero asperiores fugiat consequuntur deserunt culpa repudiandae sed quidem voluptas explicabo soluta.
+        .col-xs-12.col-sm-5
+          / CONTACT
+          .box.clearfix
+            %h2
+              Contact
+            .contact-item
+              .icon.pull-left.text-center
+                %i.fa.fa-phone
+              .title.only.pull-right
+                %a{:href => "sms://+19177763154"} 917 776 3154
+            .contact-item
+              .icon.pull-left.text-center
+                %i.fa.fa-envelope-o
+              .title.only.pull-right
+                %a{:href => "emailto:maxrogers90@gmail.com"} maxrogers90@gmail.com
+            .contact-item
+              .icon.pull-left.text-center
+                %i.fa.fa-linkedin
+              .title.pull-right
+                Linkedin
+              .description.pull-right
+                %a{:href => "http://www.linkedin.com/in/maximilianrogers/"} http://www.linkedin.com/in/maximilianrogers/
+            .contact-item
+              .icon.pull-left.text-center
+                %i.fa.fa-facebook
+              .title.pull-right
+                Facebook
+              .description.pull-right
+                %a{:href => "https://www.facebook.com/maximilian.rogers"} https://www.facebook.com/maximilian.rogers
+            .contact-item
+              .icon.pull-left.text-center
+                %i.fa.fa-github
+              .title.pull-right
+                Github
+              .description.pull-right
+                %a{:href => "https://github.com/honeycodedbear"} https://github.com/honeycodedbear
+          / SKILLS
+          .box
+            %h2
+              Languages
+            .skills
+              .item-skills{"data-percent" => "1.00", :style => "width: 458px;"}
+                Ruby
+              .item-skills{"data-percent" => "0.90", :style => "width: 412.2px;"}
+                Java
+              .item-skills{"data-percent" => "0.80", :style => "width: 366.40000000000003px;"}
+                Javascript
+              .item-skills{"data-percent" => "0.75", :style => "width: 343.5px;"}
+                Objective-C/Swift
+              .item-skills{"data-percent" => "0.25", :style => "width: 114.5px;"}
+                C
+              .skills-legend.clearfix
+                .legend-left.legend
+                  Beginner
+                .legend-left.legend
+                  %span Proficient
+                .legend-right.legend
+                  %span Expert
+                .legend-right.legend
+                  Master
+          / SKILLS
+          .box
+            %h2
+              Technologies
+            .skills
+              .item-skills{"data-percent" => "1.00", :style => "width: 458px;"}
+                Ruby
+              .item-skills{"data-percent" => "0.90", :style => "width: 412.2px;"}
+                Java
+              .item-skills{"data-percent" => "0.80", :style => "width: 366.40000000000003px;"}
+                Javascript
+              .item-skills{"data-percent" => "0.75", :style => "width: 343.5px;"}
+                Objective-C/Swift
+              .item-skills{"data-percent" => "0.25", :style => "width: 114.5px;"}
+                C
+              .skills-legend.clearfix
+                .legend-left.legend
+                  Beginner
+                .legend-left.legend
+                  %span Proficient
+                .legend-right.legend
+                  %span Expert
+                .legend-right.legend
+                  Master
+          / LANGUAGES
+          .box
+            %h2
+              Languages
+            #language-skills
+              .skill
+                Polish
+                .icons.pull-right
+                  .icons-red{:style => "width: 80%; height: 14px;"}
+              .skill
+                English
+                .icons.pull-right
+                  .icons-red{:style => "width: 60%; height: 14px;"}
+          / HOBBIES
+          .box
+            %h2
+              Hobbies
+            .hobby
+              Photography
+            .hobby
+              Cycling
+            .hobby
+              Programming
+    / JQUERY
+    %script{:src => "js/jquery-2.1.1.min.js", :type => "text/javascript"}
+    / BOOTSTRAP
+    %script{:src => "js/bootstrap.min.js", :type => "text/javascript"}
+    / SCRIPTS
+    %script{:src => "js/scripts.js", :type => "text/javascript"}
