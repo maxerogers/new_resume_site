@@ -1,0 +1,63 @@
+/ EXPERIENCES
+.box
+  %h2 Experiences
+  .job.clearfix
+    .col-xs-3
+      .where Coach and Campus Representative
+      .year Fall 2014
+    .col-xs-9
+      .profession Major League Hacking
+      .description
+        Campus representative and community leader to inspire students to develop their own applications
+        and participate in hackathons.
+  .job.clearfix
+    .col-xs-3
+      .where Unhackathon
+      .year Summer - Fall 2014
+      .year
+        %a{:href => "http://www.unhackathon.org"}
+      .col-xs-9
+        .profession Lead Web Developer and Volunteer
+        .description
+          Built an interactive sign-up form and complimentary back-end to host the 400 student sign-ups. Vol-
+          unteered and mentored participants in web and mobile development
+    .job.clearfix
+      .col-xs-3
+        .where Lead Mobile Developer
+        .year Spring 2014
+      .col-xs-9
+        .profession Stony Brook Children's Hospital
+        .description
+          A interactive mobile application to step patients through the 24 hour long time sensitive procedure to prepare themselves for a colonoscopy.Developed using Apache-Cordova to simultaneously port to iOS and Android.
+  / Projects
+  .box
+    %h2 Personal Projects
+    .job.clearfix
+      .col-xs-3
+        .where Tuesday.rb
+        .year Fall 2014
+        .year
+          %a{:href => "tuesday.maxrogers.me"}
+        .col-xs-9
+          .profession Fast Casual Deployment Tool
+          .description A Commandline tool designed to help developers migrate from Development to Production in a seem- less transation. Built with Digital Ocean in mind, Tuesday anaylizes your stack and installes/configures the necessary technologies to get your site up and running. It even handles subdomains .[Built using Ruby/Rubygems/Bash/Nginx/Unicorn.]
+      .job.clearfix
+        .col-xs-3
+          .where Gitten
+          .year Fall 2014
+        .col-xs-9
+          .profession Github Social Network App
+          .description Gitten is a social networking site for hackers and their repos. Styled like Twitter, but with a feed of GitHub commits, Gitten allows you to see the progress of your friends (and rivals!) projects.[Built using Ruby/Sinatra/Bootstrap/MongoDB/Postgres]
+      .job.clearfix
+        .col-xs-3
+          .where Huntr
+          .year Fall 2014
+        .col-xs-9
+          .profession Mobile Cloud Based Application
+          .description
+            Mobile match making application for iOS and Android, built with Ruby/Sinatra. Allows employers and potential employees to find each other and possible exchange contact. It brings the easy and
+            ￼￼￼￼usability of Tinder to finding Software Engineers.
+            Education
+            Stony Brook University
+            Leadership: Mobile App Developers Founder and President [Spring 2012-Fall 2014], TechTalk on Apache Cordova[Oct 2014], Geek Games Volunteer [Fall 2012-Fall 2014]
+            Built for a course in mobile applications (CSE 391).

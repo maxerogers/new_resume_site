@@ -4,71 +4,83 @@
     %meta{:charset => "utf-8"}/
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
-    %title 3ColorResume
+    %title Max Rogers | Software Engineer
     %link{:href => "css/bootstrap.min.css", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "css/font-awesome.min.css", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "css/main.scss", :rel => "stylesheet", :type => "text/css"}/
-    /[if lt IE 9]
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-    %script{:async => "", :src => "//www.google-analytics.com/analytics.js", :type => "text/javascript"}
-    :javascript
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-51302339-1', 'kamsolutions.pl');
-  ga('send', 'pageview');
-    %body
+
+  %body{ :style => "" }
     .container
       .row
         .col-xs-12
-          #photo-header.text-center
-            / PHOTO (AVATAR)
+          .text-center#photo-header
             #photo
-              %img{:alt => "avatar", :src => "img/avatar.jpg"}/
+              %img{:src => "/img/avatar.jpg"}
             #text-header
               %h1
-                Hello,
-                %br>/
-                my name is
-                %span Max
-                %sup 24yo
-                and this is my resume/cv
       .row
         .col-xs-12.col-sm-7
           / ABOUT ME
           .box
-            %h2
-              About Me
-            %p
-              My name is Max Rogers, and I’m a passionate Ruby developer, founder of Mobile App Developers, and a coach at Major League Hacking. A student at Stony Brook University and graduating this December. Looking for fullstack(web) or mobile developer employment positions in New York,NY.
+            %h2 About Me
+            %p My name is Max Rogers, and I’m a passionate Ruby developer, founder of Mobile App Developers, and a coach at Major League Hacking. A student at Stony Brook University and graduating this December. Looking for fullstack(web) or mobile developer employment positions in New York,NY.
           / EXPERIENCES
           .box
-            %h2
-              Experiences
+            %h2 Experiences
             .job.clearfix
               .col-xs-3
-                .where
-                  Google
-                .year
-                  2013 - 2014
+                .where Coach and Campus Representative
+                .year Fall 2014
               .col-xs-9
-                .profession
-                  Front-end developer / php programmer
+                .profession Major League Hacking
                 .description
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, et, illum perferendis veritatis velit sunt similique qui magni totam harum tempore eius laboriosam accusantium necessitatibus voluptatum? Enim, itaque dignissimos quia.
+                  Campus representative and community leader to inspire students to develop their own applications
+                  and participate in hackathons.
             .job.clearfix
               .col-xs-3
-                .where
-                  Twitter
-                .year
-                  2012
+                .where Lead Web Developer
+                .year Summer-Fall 2014
               .col-xs-9
-                .profession
-                  Web Developer
+                .profession Unhackathon
                 .description
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, nihil sit nemo voluptatem praesentium. Quia, qui facere consectetur libero asperiores fugiat consequuntur deserunt culpa repudiandae sed quidem voluptas explicabo soluta.
+                  Built an interactive sign-up form and complimentary back-end to host the 400 student sign-ups. Volunteered and mentored participants in Web and Mobile Development
+            .job.clearfix
+              .col-xs-3
+                .where Lead Mobile Developer
+                .year Spring 2014
+              .col-xs-9
+                .profession Stony Brook Children’s Hospital
+                .description
+                  A interactive mobile application to step patients through the 24 hour long time sensitive procedure to prepare themselves for a colonoscopy.Developed using Apache-Cordova to simultaneously port to iOS and Android.
+          .box
+            %h2 Personal Projects
+            .job.clearfix
+              .col-xs-3
+                .where Tuesday.rb
+                .year Built @HackNY
+                .year Oct 2014
+              .col-xs-9
+                .profession Fast Casual Deployment Tool
+                .description
+                  A Commandline tool designed to help developers migrate from Development to Production in a seem- less transation. Built with Digital Ocean in mind, Tuesday anaylizes your stack and installes/configures the necessary technologies to get your site up and running. It even handles subdomains .[Built using Ruby/Rubygems/Bash/Nginx/Unicorn.]
+            .job.clearfix
+              .col-xs-3
+                .where Gitten
+                .year Built @HackRU
+                .year Oct 2014
+              .col-xs-9
+                .profession Github Social Network App
+                .description
+                  Gitten is a social networking site for hackers and their repos. Styled like Twitter, but with a feed of GitHub commits, Gitten allows you to see the progress of your friends (and rivals!) projects.[Built using Ruby/Sinatra/Bootstrap/MongoDB/Postgres]
+            .job.clearfix
+              .col-xs-3
+                .where Huntr
+                .year Fall 2014
+              .col-xs-9
+                .profession Mobile Cloud Based Application
+                .description
+                  Mobile match making application for iOS and Android, built with Ruby/Sinatra. Allows employers and potential employees to find each other and possible exchange contact.
+                  It brings the easy and usability of Tinder to finding Software Engineers. Built for a course in mobile applications (CSE 391).
         .col-xs-12.col-sm-5
           / CONTACT
           .box.clearfix
@@ -116,7 +128,7 @@
                 Java
               .item-skills{"data-percent" => "0.80", :style => "width: 366.40000000000003px;"}
                 Javascript
-              .item-skills{"data-percent" => "0.75", :style => "width: 343.5px;"}
+              .item-skills{"data-percent" => "0.50", :style => "width: 343.5px;"}
                 Objective-C/Swift
               .item-skills{"data-percent" => "0.25", :style => "width: 114.5px;"}
                 C
@@ -135,15 +147,15 @@
               Technologies
             .skills
               .item-skills{"data-percent" => "1.00", :style => "width: 458px;"}
-                Ruby
+                Git
               .item-skills{"data-percent" => "0.90", :style => "width: 412.2px;"}
-                Java
+                Sinatra
               .item-skills{"data-percent" => "0.80", :style => "width: 366.40000000000003px;"}
-                Javascript
-              .item-skills{"data-percent" => "0.75", :style => "width: 343.5px;"}
-                Objective-C/Swift
+                Rails
+              .item-skills{"data-percent" => "0.50", :style => "width: 343.5px;"}
+                iOS
               .item-skills{"data-percent" => "0.25", :style => "width: 114.5px;"}
-                C
+                Android
               .skills-legend.clearfix
                 .legend-left.legend
                   Beginner
@@ -154,28 +166,7 @@
                 .legend-right.legend
                   Master
           / LANGUAGES
-          .box
-            %h2
-              Languages
-            #language-skills
-              .skill
-                Polish
-                .icons.pull-right
-                  .icons-red{:style => "width: 80%; height: 14px;"}
-              .skill
-                English
-                .icons.pull-right
-                  .icons-red{:style => "width: 60%; height: 14px;"}
-          / HOBBIES
-          .box
-            %h2
-              Hobbies
-            .hobby
-              Photography
-            .hobby
-              Cycling
-            .hobby
-              Programming
+
     / JQUERY
     %script{:src => "js/jquery-2.1.1.min.js", :type => "text/javascript"}
     / BOOTSTRAP
