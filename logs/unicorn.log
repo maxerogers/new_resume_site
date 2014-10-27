@@ -1,0 +1,6 @@
+I, [2014-10-26T21:07:53.250551 #9731]  INFO -- : listening on addr=/tmp/unicorn.new_resume_site.sock fd=10
+I, [2014-10-26T21:07:53.251103 #9731]  INFO -- : worker=0 spawning...
+I, [2014-10-26T21:07:53.257730 #9731]  INFO -- : master process ready
+I, [2014-10-26T21:07:53.262743 #9734]  INFO -- : worker=0 spawned pid=9734
+I, [2014-10-26T21:07:53.265724 #9734]  INFO -- : Refreshing Gem list
+I, [2014-10-26T21:07:53.701668 #9734]  INFO -- : worker=0 ready
